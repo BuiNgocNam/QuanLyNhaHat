@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NhaHatDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="NhaHatDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DangNhaps" EntityType="NhaHatDBModel.DangNhap" />
+    <EntitySet Name="KhachHangs" EntityType="NhaHatDBModel.KhachHang" />
+    <EntitySet Name="LichChieux" EntityType="NhaHatDBModel.LichChieu" />
+    <EntitySet Name="LoaiVes" EntityType="NhaHatDBModel.LoaiVe" />
+    <EntitySet Name="NhanViens" EntityType="NhaHatDBModel.NhanVien" />
+    <EntitySet Name="TietMucs" EntityType="NhaHatDBModel.TietMuc" />
+    <EntitySet Name="VeBans" EntityType="NhaHatDBModel.VeBan" />
+    <AssociationSet Name="FK_DangNhap_NhanVien" Association="NhaHatDBModel.FK_DangNhap_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="DangNhap" EntitySet="DangNhaps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VeBan_KhachHang" Association="NhaHatDBModel.FK_VeBan_KhachHang">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="VeBan" EntitySet="VeBans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LichChieu_TietMuc" Association="NhaHatDBModel.FK_LichChieu_TietMuc">
+      <End Role="TietMuc" EntitySet="TietMucs" />
+      <End Role="LichChieu" EntitySet="LichChieux" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VeBan_LichChieu" Association="NhaHatDBModel.FK_VeBan_LichChieu">
+      <End Role="LichChieu" EntitySet="LichChieux" />
+      <End Role="VeBan" EntitySet="VeBans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VeBan_LoaiVe" Association="NhaHatDBModel.FK_VeBan_LoaiVe">
+      <End Role="LoaiVe" EntitySet="LoaiVes" />
+      <End Role="VeBan" EntitySet="VeBans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VeBan_NhanVien" Association="NhaHatDBModel.FK_VeBan_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="VeBan" EntitySet="VeBans" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DangNhap">
+    <Key>
+      <PropertyRef Name="MaNV" />
+    </Key>
+    <Property Name="MaNV" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MatKhau" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="NhanVien" Relationship="NhaHatDBModel.FK_DangNhap_NhanVien" FromRole="DangNhap" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="HoTen" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NgaySinh" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GioiTinh" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SDT" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DiaChi" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="VeBans" Relationship="NhaHatDBModel.FK_VeBan_KhachHang" FromRole="KhachHang" ToRole="VeBan" />
+  </EntityType>
+  <EntityType Name="LichChieu">
+    <Key>
+      <PropertyRef Name="MaLichDien" />
+    </Key>
+    <Property Name="MaLichDien" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NgayDien" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GioDien" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MaTietMuc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="TietMuc" Relationship="NhaHatDBModel.FK_LichChieu_TietMuc" FromRole="LichChieu" ToRole="TietMuc" />
+    <NavigationProperty Name="VeBans" Relationship="NhaHatDBModel.FK_VeBan_LichChieu" FromRole="LichChieu" ToRole="VeBan" />
+  </EntityType>
+  <EntityType Name="LoaiVe">
+    <Key>
+      <PropertyRef Name="MaLoai" />
+    </Key>
+    <Property Name="MaLoai" Type="Int32" Nullable="false" />
+    <Property Name="TenLoai" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="HangGhe" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NgayBan" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Gia" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="VeBans" Relationship="NhaHatDBModel.FK_VeBan_LoaiVe" FromRole="LoaiVe" ToRole="VeBan" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="MaNV" />
+    </Key>
+    <Property Name="MaNV" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="HoTen" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NgaySinh" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GioiTinh" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SDT" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ChucVu" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="QueQuan" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="DangNhap" Relationship="NhaHatDBModel.FK_DangNhap_NhanVien" FromRole="NhanVien" ToRole="DangNhap" />
+    <NavigationProperty Name="VeBans" Relationship="NhaHatDBModel.FK_VeBan_NhanVien" FromRole="NhanVien" ToRole="VeBan" />
+  </EntityType>
+  <EntityType Name="TietMuc">
+    <Key>
+      <PropertyRef Name="MaTietMuc" />
+    </Key>
+    <Property Name="MaTietMuc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TenTietMuc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TheLoai" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DienVien" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="true" />
+    <Property Name="NoiDung" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="LichChieux" Relationship="NhaHatDBModel.FK_LichChieu_TietMuc" FromRole="TietMuc" ToRole="LichChieu" />
+  </EntityType>
+  <EntityType Name="VeBan">
+    <Key>
+      <PropertyRef Name="MaVe" />
+    </Key>
+    <Property Name="MaVe" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MaKH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MaLichDien" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LoaiVe" Type="Int32" />
+    <Property Name="SoLuong" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MaNV" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="KhachHang" Relationship="NhaHatDBModel.FK_VeBan_KhachHang" FromRole="VeBan" ToRole="KhachHang" />
+    <NavigationProperty Name="LichChieu" Relationship="NhaHatDBModel.FK_VeBan_LichChieu" FromRole="VeBan" ToRole="LichChieu" />
+    <NavigationProperty Name="LoaiVe1" Relationship="NhaHatDBModel.FK_VeBan_LoaiVe" FromRole="VeBan" ToRole="LoaiVe" />
+    <NavigationProperty Name="NhanVien" Relationship="NhaHatDBModel.FK_VeBan_NhanVien" FromRole="VeBan" ToRole="NhanVien" />
+  </EntityType>
+  <Association Name="FK_DangNhap_NhanVien">
+    <End Role="NhanVien" Type="NhaHatDBModel.NhanVien" Multiplicity="1" />
+    <End Role="DangNhap" Type="NhaHatDBModel.DangNhap" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="DangNhap">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VeBan_KhachHang">
+    <End Role="KhachHang" Type="NhaHatDBModel.KhachHang" Multiplicity="0..1" />
+    <End Role="VeBan" Type="NhaHatDBModel.VeBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="VeBan">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LichChieu_TietMuc">
+    <End Role="TietMuc" Type="NhaHatDBModel.TietMuc" Multiplicity="1" />
+    <End Role="LichChieu" Type="NhaHatDBModel.LichChieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TietMuc">
+        <PropertyRef Name="MaTietMuc" />
+      </Principal>
+      <Dependent Role="LichChieu">
+        <PropertyRef Name="MaTietMuc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VeBan_LichChieu">
+    <End Role="LichChieu" Type="NhaHatDBModel.LichChieu" Multiplicity="0..1" />
+    <End Role="VeBan" Type="NhaHatDBModel.VeBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LichChieu">
+        <PropertyRef Name="MaLichDien" />
+      </Principal>
+      <Dependent Role="VeBan">
+        <PropertyRef Name="MaLichDien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VeBan_LoaiVe">
+    <End Role="LoaiVe" Type="NhaHatDBModel.LoaiVe" Multiplicity="0..1" />
+    <End Role="VeBan" Type="NhaHatDBModel.VeBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiVe">
+        <PropertyRef Name="MaLoai" />
+      </Principal>
+      <Dependent Role="VeBan">
+        <PropertyRef Name="LoaiVe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VeBan_NhanVien">
+    <End Role="NhanVien" Type="NhaHatDBModel.NhanVien" Multiplicity="0..1" />
+    <End Role="VeBan" Type="NhaHatDBModel.VeBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="VeBan">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

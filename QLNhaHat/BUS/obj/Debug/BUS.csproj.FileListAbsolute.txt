@@ -1,0 +1,5 @@
+D:\QLNhaHat\Bin\BUS.dll
+D:\QLNhaHat\Bin\BUS.pdb
+D:\QLNhaHat\BUS\obj\Debug\BUS.dll
+D:\QLNhaHat\BUS\obj\Debug\BUS.pdb
+D:\QLNhaHat\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache

@@ -1,0 +1,13 @@
+D:\QLNhaHat\Bin\QLNhaHat.exe.config
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormLogin.resources
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.Properties.Resources.resources
+D:\QLNhaHat\Bin\QLNhaHat.exe
+D:\QLNhaHat\Bin\QLNhaHat.pdb
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.exe
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.pdb
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormBook.resources
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csprojResolveAssemblyReference.cache
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csproj.GenerateResource.Cache
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormDelay.resources
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormAdmin.resources
+D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormEmployee.resources

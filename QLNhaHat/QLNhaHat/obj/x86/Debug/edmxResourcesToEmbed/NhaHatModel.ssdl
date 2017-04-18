@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NhaHatDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="NhaHatDBModelStoreContainer">
+    <EntitySet Name="DangNhap" EntityType="NhaHatDBModel.Store.DangNhap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="KhachHang" EntityType="NhaHatDBModel.Store.KhachHang" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LichChieu" EntityType="NhaHatDBModel.Store.LichChieu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LoaiVe" EntityType="NhaHatDBModel.Store.LoaiVe" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NhanVien" EntityType="NhaHatDBModel.Store.NhanVien" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TietMuc" EntityType="NhaHatDBModel.Store.TietMuc" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VeBan" EntityType="NhaHatDBModel.Store.VeBan" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_DangNhap_NhanVien" Association="NhaHatDBModel.Store.FK_DangNhap_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="DangNhap" EntitySet="DangNhap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LichChieu_TietMuc" Association="NhaHatDBModel.Store.FK_LichChieu_TietMuc">
+      <End Role="TietMuc" EntitySet="TietMuc" />
+      <End Role="LichChieu" EntitySet="LichChieu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VeBan_KhachHang" Association="NhaHatDBModel.Store.FK_VeBan_KhachHang">
+      <End Role="KhachHang" EntitySet="KhachHang" />
+      <End Role="VeBan" EntitySet="VeBan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VeBan_LichChieu" Association="NhaHatDBModel.Store.FK_VeBan_LichChieu">
+      <End Role="LichChieu" EntitySet="LichChieu" />
+      <End Role="VeBan" EntitySet="VeBan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VeBan_LoaiVe" Association="NhaHatDBModel.Store.FK_VeBan_LoaiVe">
+      <End Role="LoaiVe" EntitySet="LoaiVe" />
+      <End Role="VeBan" EntitySet="VeBan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VeBan_NhanVien" Association="NhaHatDBModel.Store.FK_VeBan_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="VeBan" EntitySet="VeBan" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DangNhap">
+    <Key>
+      <PropertyRef Name="MaNV" />
+    </Key>
+    <Property Name="MaNV" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MatKhau" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="HoTen" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgaySinh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GioiTinh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="LichChieu">
+    <Key>
+      <PropertyRef Name="MaLichDien" />
+    </Key>
+    <Property Name="MaLichDien" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayDien" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GioDien" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MaTietMuc" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LoaiVe">
+    <Key>
+      <PropertyRef Name="MaLoai" />
+    </Key>
+    <Property Name="MaLoai" Type="int" Nullable="false" />
+    <Property Name="TenLoai" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="HangGhe" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayBan" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gia" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="MaNV" />
+    </Key>
+    <Property Name="MaNV" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="HoTen" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgaySinh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GioiTinh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChucVu" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="QueQuan" Type="nchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TietMuc">
+    <Key>
+      <PropertyRef Name="MaTietMuc" />
+    </Key>
+    <Property Name="MaTietMuc" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TenTietMuc" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TheLoai" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DienVien" Type="nchar" Nullable="false" MaxLength="200" />
+    <Property Name="NoiDung" Type="nchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="VeBan">
+    <Key>
+      <PropertyRef Name="MaVe" />
+    </Key>
+    <Property Name="MaVe" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MaKH" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaLichDien" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoaiVe" Type="int" />
+    <Property Name="SoLuong" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaNV" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_DangNhap_NhanVien">
+    <End Role="NhanVien" Type="NhaHatDBModel.Store.NhanVien" Multiplicity="1" />
+    <End Role="DangNhap" Type="NhaHatDBModel.Store.DangNhap" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="DangNhap">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LichChieu_TietMuc">
+    <End Role="TietMuc" Type="NhaHatDBModel.Store.TietMuc" Multiplicity="1" />
+    <End Role="LichChieu" Type="NhaHatDBModel.Store.LichChieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TietMuc">
+        <PropertyRef Name="MaTietMuc" />
+      </Principal>
+      <Dependent Role="LichChieu">
+        <PropertyRef Name="MaTietMuc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VeBan_KhachHang">
+    <End Role="KhachHang" Type="NhaHatDBModel.Store.KhachHang" Multiplicity="0..1" />
+    <End Role="VeBan" Type="NhaHatDBModel.Store.VeBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="VeBan">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VeBan_LichChieu">
+    <End Role="LichChieu" Type="NhaHatDBModel.Store.LichChieu" Multiplicity="0..1" />
+    <End Role="VeBan" Type="NhaHatDBModel.Store.VeBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LichChieu">
+        <PropertyRef Name="MaLichDien" />
+      </Principal>
+      <Dependent Role="VeBan">
+        <PropertyRef Name="MaLichDien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VeBan_LoaiVe">
+    <End Role="LoaiVe" Type="NhaHatDBModel.Store.LoaiVe" Multiplicity="0..1" />
+    <End Role="VeBan" Type="NhaHatDBModel.Store.VeBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiVe">
+        <PropertyRef Name="MaLoai" />
+      </Principal>
+      <Dependent Role="VeBan">
+        <PropertyRef Name="LoaiVe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VeBan_NhanVien">
+    <End Role="NhanVien" Type="NhaHatDBModel.Store.NhanVien" Multiplicity="0..1" />
+    <End Role="VeBan" Type="NhaHatDBModel.Store.VeBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="VeBan">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,5 @@
+D:\QLNhaHat\Bin\DAO.dll
+D:\QLNhaHat\Bin\DAO.pdb
+D:\QLNhaHat\DAO\obj\Debug\DAO.dll
+D:\QLNhaHat\DAO\obj\Debug\DAO.pdb
+D:\QLNhaHat\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
