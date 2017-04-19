@@ -11,3 +11,6 @@ D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csproj.GenerateResource.Cache
 D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormDelay.resources
 D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormAdmin.resources
 D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormEmployee.resources
+C:\Users\Dell\Desktop\ThanhPhuong\QuanLyNhaHat\QLNhaHat\Bin\QLNhaHat.exe.config
+C:\Users\Dell\Desktop\ThanhPhuong\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.exe
+C:\Users\Dell\Desktop\ThanhPhuong\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.pdb
