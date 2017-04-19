@@ -21,8 +21,8 @@ namespace QLNhaHat
         private void timer1_Tick(object sender, EventArgs e)
         {
             Graphics g = CreateGraphics();
-            Font f = new Font("Arial", 36, FontStyle.Bold);
-            string text = "WELCOME";
+            Font f = new Font("Matura MT Script Capitals", 30, FontStyle.Bold);
+            string text = "Theater Management\nApplication";
             StringFormat format = new StringFormat();
             format.LineAlignment = StringAlignment.Center;
             format.Alignment = StringAlignment.Center;

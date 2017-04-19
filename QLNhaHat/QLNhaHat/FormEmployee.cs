@@ -111,7 +111,7 @@ namespace QLNhaHat
             string MaKH, HoTen, NgaySinh, GioiTinh, DiaChi;
             int SDT;
 
-            MaKH = txtMaKH.Text.Trim();
+            MaKH = Convert.ToString("KH" + txtMaNV.Text.Trim());
             HoTen = txtHoTenKH.Text.Trim();
             NgaySinh = dateTimePicker1.Value.ToString("dd-MM-yyyy");
             if (radNamKH.Checked)
@@ -365,6 +365,11 @@ namespace QLNhaHat
                 e.Handled = true;
         }
 
+        private void txtSdtKH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
 
         ///////////////////////////
         // Xử lý các nút bật TabPage
@@ -389,6 +394,8 @@ namespace QLNhaHat
             FormLogin f = new FormLogin();
             f.ShowDialog();
         }
+
+        
 
 
     }

@@ -8,3 +8,8 @@ D:\BTLLTCSDL\QLNhaHat\Bin\DTO.pdb
 D:\BTLLTCSDL\QLNhaHat\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 D:\BTLLTCSDL\QLNhaHat\DTO\obj\Debug\DTO.dll
 D:\BTLLTCSDL\QLNhaHat\DTO\obj\Debug\DTO.pdb
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\Bin\DTO.dll
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\Bin\DTO.pdb
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\DTO\obj\Debug\DTO.dll
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\DTO\obj\Debug\DTO.pdb

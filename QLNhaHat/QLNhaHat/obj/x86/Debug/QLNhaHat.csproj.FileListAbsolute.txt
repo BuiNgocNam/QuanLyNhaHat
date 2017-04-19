@@ -27,3 +27,15 @@ D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csproj.GenerateResource.Ca
 D:\BTLLTCSDL\New folder\QLNhaHat\Bin\QLNhaHat.exe.config
 D:\BTLLTCSDL\New folder\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.exe
 D:\BTLLTCSDL\New folder\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.pdb
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\Bin\QLNhaHat.exe.config
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.exe
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.pdb
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\Bin\QLNhaHat.exe
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\Bin\QLNhaHat.pdb
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormDelay.resources
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormAdmin.resources
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormEmployee.resources
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormLogin.resources
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.Properties.Resources.resources
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csproj.GenerateResource.Cache

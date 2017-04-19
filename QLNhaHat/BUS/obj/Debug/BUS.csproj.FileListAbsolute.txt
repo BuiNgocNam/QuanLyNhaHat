@@ -8,3 +8,8 @@ D:\BTLLTCSDL\QLNhaHat\Bin\BUS.pdb
 D:\BTLLTCSDL\QLNhaHat\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 D:\BTLLTCSDL\QLNhaHat\BUS\obj\Debug\BUS.dll
 D:\BTLLTCSDL\QLNhaHat\BUS\obj\Debug\BUS.pdb
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\Bin\BUS.dll
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\Bin\BUS.pdb
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\BUS\obj\Debug\BUS.dll
+C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\BUS\obj\Debug\BUS.pdb

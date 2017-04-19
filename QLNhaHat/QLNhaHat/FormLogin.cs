@@ -30,7 +30,7 @@ namespace QLNhaHat
         {
             string username = txtDangNhap.Text;
             string password = txtMatKhau.Text;
-            string sql = "SELECT * FROM DangNhap WHERE MaNV=@MaNV AND MatKhau=@MatKhau" ;
+            string sql = "SELECT * FROM DangNhap WHERE MaNV='"+ username+"' AND MatKhau= '"+ password+ "'";
             int x = new EmployeeBUS().LoginSuccess(sql, username, password);
             if (username.Length == 0 && password.Length == 0)
             {
@@ -69,6 +69,11 @@ namespace QLNhaHat
             {
                 txtMatKhau.UseSystemPasswordChar = true;
             }
+        }
+
+        private void btnLoginESC_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         

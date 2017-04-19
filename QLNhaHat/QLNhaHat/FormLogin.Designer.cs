@@ -124,6 +124,7 @@
             this.btnLoginESC.TabIndex = 9;
             this.btnLoginESC.Text = "Thoát";
             this.btnLoginESC.UseVisualStyleBackColor = true;
+            this.btnLoginESC.Click += new System.EventHandler(this.btnLoginESC_Click);
             // 
             // btnLoginOK
             // 
@@ -151,7 +152,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormLogin";
-            this.Text = "FormLogin";
+            this.Text = "Đăng Nhập";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
