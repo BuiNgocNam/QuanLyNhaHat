@@ -67,23 +67,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBook.Designer.cs">
-      <DependentUpon>FormBook.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormDelay.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDelay.Designer.cs">
       <DependentUpon>FormDelay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAdmin.Designer.cs">
-      <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEmployee.cs">
       <SubType>Form</SubType>
@@ -97,28 +85,13 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormReport.Designer.cs">
-      <DependentUpon>FormReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormBook.resx">
-      <DependentUpon>FormBook.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormDelay.resx">
       <DependentUpon>FormDelay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAdmin.resx">
-      <DependentUpon>FormAdmin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormEmployee.resx">
       <DependentUpon>FormEmployee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
