@@ -11,6 +11,19 @@ D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csproj.GenerateResource.Cache
 D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormDelay.resources
 D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormAdmin.resources
 D:\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormEmployee.resources
-C:\Users\Dell\Desktop\ThanhPhuong\QuanLyNhaHat\QLNhaHat\Bin\QLNhaHat.exe.config
-C:\Users\Dell\Desktop\ThanhPhuong\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.exe
-C:\Users\Dell\Desktop\ThanhPhuong\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.pdb
+D:\BTLLTCSDL\QLNhaHat\Bin\QLNhaHat.exe.config
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.exe
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.pdb
+D:\BTLLTCSDL\QLNhaHat\Bin\QLNhaHat.exe
+D:\BTLLTCSDL\QLNhaHat\Bin\QLNhaHat.pdb
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csprojResolveAssemblyReference.cache
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormBook.resources
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormDelay.resources
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormAdmin.resources
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormEmployee.resources
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormLogin.resources
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.Properties.Resources.resources
+D:\BTLLTCSDL\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csproj.GenerateResource.Cache
+D:\BTLLTCSDL\New folder\QLNhaHat\Bin\QLNhaHat.exe.config
+D:\BTLLTCSDL\New folder\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.exe
+D:\BTLLTCSDL\New folder\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.pdb

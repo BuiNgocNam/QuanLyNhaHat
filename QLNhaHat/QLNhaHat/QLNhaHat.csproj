@@ -73,6 +73,12 @@
     <Compile Include="FormDelay.Designer.cs">
       <DependentUpon>FormDelay.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,8 +96,14 @@
     <EmbeddedResource Include="FormDelay.resx">
       <DependentUpon>FormDelay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEmployee.resx">
       <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -158,6 +170,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\img\add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\employee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\chart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\update.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\chair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\customer.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

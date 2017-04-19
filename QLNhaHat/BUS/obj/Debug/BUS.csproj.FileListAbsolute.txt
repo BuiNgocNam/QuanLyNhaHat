@@ -3,3 +3,8 @@ D:\QLNhaHat\Bin\BUS.pdb
 D:\QLNhaHat\BUS\obj\Debug\BUS.dll
 D:\QLNhaHat\BUS\obj\Debug\BUS.pdb
 D:\QLNhaHat\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\BTLLTCSDL\QLNhaHat\Bin\BUS.dll
+D:\BTLLTCSDL\QLNhaHat\Bin\BUS.pdb
+D:\BTLLTCSDL\QLNhaHat\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\BTLLTCSDL\QLNhaHat\BUS\obj\Debug\BUS.dll
+D:\BTLLTCSDL\QLNhaHat\BUS\obj\Debug\BUS.pdb

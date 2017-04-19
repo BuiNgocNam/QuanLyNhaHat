@@ -3,3 +3,8 @@ D:\QLNhaHat\Bin\DAO.pdb
 D:\QLNhaHat\DAO\obj\Debug\DAO.dll
 D:\QLNhaHat\DAO\obj\Debug\DAO.pdb
 D:\QLNhaHat\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\BTLLTCSDL\QLNhaHat\Bin\DAO.dll
+D:\BTLLTCSDL\QLNhaHat\Bin\DAO.pdb
+D:\BTLLTCSDL\QLNhaHat\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\BTLLTCSDL\QLNhaHat\DAO\obj\Debug\DAO.dll
+D:\BTLLTCSDL\QLNhaHat\DAO\obj\Debug\DAO.pdb

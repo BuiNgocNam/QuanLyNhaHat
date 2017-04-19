@@ -28,29 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmployee));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmployee));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnCloseEmployee = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.btnBook = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMaKH3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaVe = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnA5 = new System.Windows.Forms.Button();
             this.btnB5 = new System.Windows.Forms.Button();
@@ -115,17 +121,20 @@
             this.ten = new System.Windows.Forms.Label();
             this.txtHoTenKH = new System.Windows.Forms.TextBox();
             this.dgvCustomer = new System.Windows.Forms.DataGridView();
-            this.txtTongTien = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnSeatPage = new System.Windows.Forms.Button();
+            this.btnCustomerPage = new System.Windows.Forms.Button();
+            this.btnCloseEmployee = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -149,56 +158,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(976, 92);
             this.label1.TabIndex = 10;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(672, 40);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(39, 38);
-            this.button4.TabIndex = 14;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(717, 40);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(39, 38);
-            this.button3.TabIndex = 15;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // btnCloseEmployee
-            // 
-            this.btnCloseEmployee.BackColor = System.Drawing.Color.White;
-            this.btnCloseEmployee.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloseEmployee.BackgroundImage")));
-            this.btnCloseEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCloseEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseEmployee.Location = new System.Drawing.Point(925, 40);
-            this.btnCloseEmployee.Name = "btnCloseEmployee";
-            this.btnCloseEmployee.Size = new System.Drawing.Size(39, 38);
-            this.btnCloseEmployee.TabIndex = 13;
-            this.btnCloseEmployee.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCloseEmployee.UseVisualStyleBackColor = false;
-            this.btnCloseEmployee.Click += new System.EventHandler(this.btnCloseEmployee_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(643, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // tabControl1
             // 
@@ -235,7 +194,6 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(158, 58);
             this.button5.TabIndex = 0;
-            this.button5.Text = "button1";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // btnBook
@@ -258,17 +216,18 @@
             this.btnReset.TabIndex = 0;
             this.btnReset.Text = "Hủy";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Controls.Add(this.txtTongTien);
             this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.textBox3);
+            this.groupBox5.Controls.Add(this.txtMaKH3);
             this.groupBox5.Controls.Add(this.label9);
-            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.txtMaNV);
             this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.txtMaVe);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.Yellow;
             this.groupBox5.Location = new System.Drawing.Point(8, 404);
@@ -277,6 +236,25 @@
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(408, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 17);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Tổng tiền";
+            // 
+            // txtTongTien
+            // 
+            this.txtTongTien.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongTien.Location = new System.Drawing.Point(512, 29);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.ReadOnly = true;
+            this.txtTongTien.Size = new System.Drawing.Size(224, 22);
+            this.txtTongTien.TabIndex = 28;
             // 
             // label10
             // 
@@ -288,14 +266,14 @@
             this.label10.TabIndex = 27;
             this.label10.Text = "Mã Vé";
             // 
-            // textBox3
+            // txtMaKH3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(139, 125);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(138, 22);
-            this.textBox3.TabIndex = 26;
+            this.txtMaKH3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaKH3.Location = new System.Drawing.Point(139, 125);
+            this.txtMaKH3.Name = "txtMaKH3";
+            this.txtMaKH3.ReadOnly = true;
+            this.txtMaKH3.Size = new System.Drawing.Size(138, 22);
+            this.txtMaKH3.TabIndex = 26;
             // 
             // label9
             // 
@@ -307,14 +285,14 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Mã Khách Hàng";
             // 
-            // textBox2
+            // txtMaNV
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(139, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(138, 22);
-            this.textBox2.TabIndex = 26;
+            this.txtMaNV.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNV.Location = new System.Drawing.Point(139, 81);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.ReadOnly = true;
+            this.txtMaNV.Size = new System.Drawing.Size(138, 22);
+            this.txtMaNV.TabIndex = 26;
             // 
             // label8
             // 
@@ -326,25 +304,117 @@
             this.label8.TabIndex = 27;
             this.label8.Text = "Mã Nhân Viên";
             // 
-            // textBox1
+            // txtMaVe
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(139, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(138, 22);
-            this.textBox1.TabIndex = 26;
+            this.txtMaVe.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaVe.Location = new System.Drawing.Point(139, 37);
+            this.txtMaVe.Name = "txtMaVe";
+            this.txtMaVe.ReadOnly = true;
+            this.txtMaVe.Size = new System.Drawing.Size(138, 22);
+            this.txtMaVe.TabIndex = 26;
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Controls.Add(this.label17);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox4.Location = new System.Drawing.Point(787, 6);
+            this.groupBox4.Location = new System.Drawing.Point(770, 6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(158, 363);
+            this.groupBox4.Size = new System.Drawing.Size(190, 363);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Chú thích:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Lime;
+            this.label18.Location = new System.Drawing.Point(82, 221);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(89, 44);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "Ghế đang\r\nchọn";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Yellow;
+            this.label17.Location = new System.Drawing.Point(82, 293);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(69, 44);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Ghế đã\r\nđặt";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Violet;
+            this.label16.Location = new System.Drawing.Point(82, 141);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(93, 44);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Ghế trống\r\n(VIP)";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(82, 71);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(93, 44);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Ghế trống\r\n(Thường)";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Yellow;
+            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label14.Location = new System.Drawing.Point(17, 281);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(50, 51);
+            this.label14.TabIndex = 0;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Lime;
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label13.Location = new System.Drawing.Point(17, 208);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(50, 50);
+            this.label13.TabIndex = 0;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.Violet;
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label12.Location = new System.Drawing.Point(16, 131);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(50, 50);
+            this.label12.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label11.Location = new System.Drawing.Point(16, 58);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(50, 49);
+            this.label11.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -943,7 +1013,7 @@
             // btnSearchCustomer
             // 
             this.btnSearchCustomer.BackColor = System.Drawing.Color.White;
-            this.btnSearchCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchCustomer.BackgroundImage")));
+            this.btnSearchCustomer.BackgroundImage = global::QLNhaHat.Properties.Resources.search;
             this.btnSearchCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSearchCustomer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchCustomer.Location = new System.Drawing.Point(167, 65);
@@ -956,7 +1026,7 @@
             // btnDeleteCustomer
             // 
             this.btnDeleteCustomer.BackColor = System.Drawing.Color.White;
-            this.btnDeleteCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteCustomer.BackgroundImage")));
+            this.btnDeleteCustomer.BackgroundImage = global::QLNhaHat.Properties.Resources.delete;
             this.btnDeleteCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDeleteCustomer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteCustomer.Location = new System.Drawing.Point(279, 65);
@@ -995,7 +1065,7 @@
             // btnAddCustomer
             // 
             this.btnAddCustomer.BackColor = System.Drawing.Color.White;
-            this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
+            this.btnAddCustomer.BackgroundImage = global::QLNhaHat.Properties.Resources.add;
             this.btnAddCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAddCustomer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCustomer.Location = new System.Drawing.Point(837, 19);
@@ -1008,7 +1078,7 @@
             // btnUpdateCustomer
             // 
             this.btnUpdateCustomer.BackColor = System.Drawing.Color.White;
-            this.btnUpdateCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateCustomer.BackgroundImage")));
+            this.btnUpdateCustomer.BackgroundImage = global::QLNhaHat.Properties.Resources.update;
             this.btnUpdateCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUpdateCustomer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateCustomer.Location = new System.Drawing.Point(837, 91);
@@ -1072,11 +1142,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(31, 30);
+            this.label5.Location = new System.Drawing.Point(19, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 17);
+            this.label5.Size = new System.Drawing.Size(107, 17);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Mã Nhân Viên";
+            this.label5.Text = "Mã Khách Hàng";
             // 
             // txtDiaChiKH
             // 
@@ -1091,7 +1161,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 147);
+            this.label6.Location = new System.Drawing.Point(19, 147);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 17);
             this.label6.TabIndex = 36;
@@ -1112,25 +1182,25 @@
             this.txtMaKH.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaKH.Location = new System.Drawing.Point(132, 28);
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.ReadOnly = true;
             this.txtMaKH.Size = new System.Drawing.Size(243, 22);
             this.txtMaKH.TabIndex = 24;
+            this.txtMaKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaKH_KeyPress);
             // 
             // ho
             // 
             this.ho.AutoSize = true;
             this.ho.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ho.Location = new System.Drawing.Point(31, 72);
+            this.ho.Location = new System.Drawing.Point(19, 72);
             this.ho.Name = "ho";
             this.ho.Size = new System.Drawing.Size(79, 17);
             this.ho.TabIndex = 28;
-            this.ho.Text = "Họ Tên NV";
+            this.ho.Text = "Họ Tên KH";
             // 
             // ten
             // 
             this.ten.AutoSize = true;
             this.ten.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ten.Location = new System.Drawing.Point(31, 105);
+            this.ten.Location = new System.Drawing.Point(19, 105);
             this.ten.Name = "ten";
             this.ten.Size = new System.Drawing.Size(69, 17);
             this.ten.TabIndex = 30;
@@ -1177,24 +1247,57 @@
             this.dgvCustomer.Size = new System.Drawing.Size(962, 245);
             this.dgvCustomer.TabIndex = 20;
             // 
-            // txtTongTien
+            // btnSeatPage
             // 
-            this.txtTongTien.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongTien.Location = new System.Drawing.Point(512, 29);
-            this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.ReadOnly = true;
-            this.txtTongTien.Size = new System.Drawing.Size(224, 22);
-            this.txtTongTien.TabIndex = 28;
+            this.btnSeatPage.BackColor = System.Drawing.Color.White;
+            this.btnSeatPage.BackgroundImage = global::QLNhaHat.Properties.Resources.chair;
+            this.btnSeatPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSeatPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeatPage.Location = new System.Drawing.Point(672, 40);
+            this.btnSeatPage.Name = "btnSeatPage";
+            this.btnSeatPage.Size = new System.Drawing.Size(39, 38);
+            this.btnSeatPage.TabIndex = 14;
+            this.btnSeatPage.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSeatPage.UseVisualStyleBackColor = false;
+            this.btnSeatPage.Click += new System.EventHandler(this.btnSeatPage_Click);
             // 
-            // label3
+            // btnCustomerPage
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(408, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 17);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Tổng tiền";
+            this.btnCustomerPage.BackColor = System.Drawing.Color.White;
+            this.btnCustomerPage.BackgroundImage = global::QLNhaHat.Properties.Resources.customer;
+            this.btnCustomerPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCustomerPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomerPage.Location = new System.Drawing.Point(717, 40);
+            this.btnCustomerPage.Name = "btnCustomerPage";
+            this.btnCustomerPage.Size = new System.Drawing.Size(39, 38);
+            this.btnCustomerPage.TabIndex = 15;
+            this.btnCustomerPage.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCustomerPage.UseVisualStyleBackColor = false;
+            this.btnCustomerPage.Click += new System.EventHandler(this.btnCustomerPage_Click);
+            // 
+            // btnCloseEmployee
+            // 
+            this.btnCloseEmployee.BackColor = System.Drawing.Color.White;
+            this.btnCloseEmployee.BackgroundImage = global::QLNhaHat.Properties.Resources.logout;
+            this.btnCloseEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCloseEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseEmployee.Location = new System.Drawing.Point(925, 40);
+            this.btnCloseEmployee.Name = "btnCloseEmployee";
+            this.btnCloseEmployee.Size = new System.Drawing.Size(39, 38);
+            this.btnCloseEmployee.TabIndex = 13;
+            this.btnCloseEmployee.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCloseEmployee.UseVisualStyleBackColor = false;
+            this.btnCloseEmployee.Click += new System.EventHandler(this.btnCloseEmployee_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(643, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // FormEmployee
             // 
@@ -1202,20 +1305,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(976, 716);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnSeatPage);
+            this.Controls.Add(this.btnCustomerPage);
             this.Controls.Add(this.btnCloseEmployee);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormEmployee";
             this.Text = "FormEmployee";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.FormEmployee_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -1223,6 +1328,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1230,8 +1336,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSeatPage;
+        private System.Windows.Forms.Button btnCustomerPage;
         private System.Windows.Forms.Button btnCloseEmployee;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
@@ -1308,12 +1414,20 @@
         private System.Windows.Forms.Button btnD1;
         private System.Windows.Forms.Button btnE1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMaKH3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaVe;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTongTien;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
     }
 }

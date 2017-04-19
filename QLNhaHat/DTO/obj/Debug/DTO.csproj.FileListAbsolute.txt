@@ -3,3 +3,8 @@ D:\QLNhaHat\Bin\DTO.pdb
 D:\QLNhaHat\DTO\obj\Debug\DTO.dll
 D:\QLNhaHat\DTO\obj\Debug\DTO.pdb
 D:\QLNhaHat\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\BTLLTCSDL\QLNhaHat\Bin\DTO.dll
+D:\BTLLTCSDL\QLNhaHat\Bin\DTO.pdb
+D:\BTLLTCSDL\QLNhaHat\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\BTLLTCSDL\QLNhaHat\DTO\obj\Debug\DTO.dll
+D:\BTLLTCSDL\QLNhaHat\DTO\obj\Debug\DTO.pdb

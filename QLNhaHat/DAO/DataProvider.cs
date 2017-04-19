@@ -92,6 +92,61 @@ namespace DAO
             }
         }
 
+
+        public Object ExecuteScalar(string sql, CommandType type, List<SqlParameter> paras)
+        {
+            Connect();
+            Object result = 0;
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, cn);
+                cmd.CommandType = type;
+                if (paras != null)
+                {
+                    foreach (SqlParameter para in paras)
+                    {
+                        cmd.Parameters.Add(para);
+                    }
+                }
+                cmd.ExecuteScalar();
+                return result;
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }         
+            
+        }
+
+        public int ExecuteDataTable(string sql, CommandType type, List<SqlParameter> paras)
+        {
+            Connect();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, cn);
+                SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adapt.Fill(ds);
+                if (paras != null)
+                {
+                    foreach (SqlParameter para in paras)
+                    {
+                        cmd.Parameters.Add(para);
+                    }
+                }
+                return 1; //trả ve thông tin
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                Disconnect();
+            }
+        }
        
 
        

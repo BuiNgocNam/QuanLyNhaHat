@@ -35,7 +35,7 @@ namespace BUS
             //Kiểm tra ràng buộc tự nhiên
             if (true)
             {
-
+                
             }
             try
             {
