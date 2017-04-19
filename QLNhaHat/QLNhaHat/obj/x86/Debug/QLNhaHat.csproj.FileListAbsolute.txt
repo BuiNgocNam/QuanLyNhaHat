@@ -39,3 +39,6 @@ C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat
 C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.FormLogin.resources
 C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.Properties.Resources.resources
 C:\Users\Dell\Desktop\QLNH\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.csproj.GenerateResource.Cache
+C:\Users\Dell\Desktop\ThanhPhuong\QuanLyNhaHat\QLNhaHat\Bin\QLNhaHat.exe.config
+C:\Users\Dell\Desktop\ThanhPhuong\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.exe
+C:\Users\Dell\Desktop\ThanhPhuong\QuanLyNhaHat\QLNhaHat\QLNhaHat\obj\x86\Debug\QLNhaHat.pdb
